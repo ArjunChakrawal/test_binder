@@ -4,6 +4,7 @@ Created on Mon Jan  3 21:33:31 2022
 
 @author: Arjun
 """
+
 import os
 
 import matplotlib as mpl
@@ -21,7 +22,10 @@ plt.style.use("ggplot")
 
 # %%
 if not os.path.exists("fig"):
-    os.mkdir("fig")
+    os.makedirs("fig/png")
+    os.makedirs("fig/svg")
+    os.makedirs("fig/tif")
+    os.makedirs("fig/html")
 
 
 # %% [markdown]
